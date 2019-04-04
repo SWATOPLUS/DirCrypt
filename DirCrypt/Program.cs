@@ -137,7 +137,7 @@ namespace DirCrypt
 
         private static IDataCryptoProvider BuildProvider()
         {
-            return new OfbCryptoProvider(new MultBlockCryptoProvider(new AesCryptoProvider(), 10000));
+            return new OfbCryptoProvider(new MultBlockCryptoProvider(new AesCryptoProvider(), 1));
         }
 
         private enum Operation
